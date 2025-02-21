@@ -1,15 +1,16 @@
 import React from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <img src="image.png" alt="logo" />
       <div className="links">
-        <a href="/">Home</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
-        <a href="/">Portfolio</a>
+        <Link to="/">Home</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/portfolio">Portfolio</Link>
       </div>
       <Button />
     </nav>

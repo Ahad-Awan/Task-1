@@ -8,6 +8,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Error from "./pages/Error";
+import Tabs from "./components/Tabs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/tabs" element={<Tabs />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
